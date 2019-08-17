@@ -8,10 +8,10 @@ import cv2                      #图像处理的库 OpenCv
 
 # dlib预测器
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(r'C:\Users\hutao\PycharmProjects\AI\check\vision_work\face_quality\models\landmarks.dat')
+predictor = dlib.shape_predictor(r'C:\Users\hqm\PycharmProjects\AI\check\vision_work\face_quality\models\landmarks.dat')
 
 # cv2读取图像
-img=cv2.imread(r"C:\Users\hutao\Desktop\model_save\001-1.jpg")
+img=cv2.imread(r"C:\Users\hqm\Desktop\model_save\001-1.jpg")
 
 # 取灰度
 img_gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
